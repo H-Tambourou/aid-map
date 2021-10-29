@@ -75,7 +75,7 @@ class CustomMap extends Component {
                                 marker={this.state.activeMarker}
                                 visible={this.state.showingInfoWindow}
                                 >
-                                <div>
+                                <div style={{color:"#1976d2", fontWeight:"400"}}>
                                     <span style={{display:"flex", textAlign:"center"}}>[{this.state.coords.coord1}, {this.state.coords.coord2}]</span>
                                 </div>
                             </InfoWindow>
@@ -86,6 +86,6 @@ class CustomMap extends Component {
 
 
 export default GoogleApiWrapper({
-   //apiKey: process.env.REACT_APP_API_KEY
-    apiKey: ""
+   apiKey: process.env.REACT_APP_API_KEY
+    //apiKey: ""
 })(CustomMap);

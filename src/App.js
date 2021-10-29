@@ -36,11 +36,11 @@ function App() {
 
   
   return (
-    <div className="App" style={{backgroundColor:"#282c34", width:"100%", height:"100%", position:"relative"}}>
-       <div className="infoCol" style={{with:"30%", height:"100%", float:"left", position:"relative"}}>
+    <div className="App">
+       <div className="infoCol">
         <Info currentLocation={currentLocation} setLocation={setLocation}/>
       </div>
-      <div className="mapCol" style={{width:"70%", height:"100%", float:"left", position:"relative"}}>
+      <div className="mapCol" >
         <CustomMap location={location} />
       </div>
 

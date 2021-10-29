@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import {Button, Link, Typography} from '@mui/material';
 
 export default function Info({currentLocation, setLocation}) {
 
@@ -20,18 +21,22 @@ longitudeRef.current.value  =null;
 
 
     return (
-        <div>
-            <h2>Tracking world hunger</h2>
+        <div className="infoWrapper" style={{height:"100%", width:"100%"}}>
+            <div>
+            <h1>Tracking world hunger</h1>
             <p>This map uses the Google Map Api, to track where aid is needed. Could be used by organizations like the WFP (World Food Programme) in their mission of delivering aid in places that are in need. </p>
-            <h3>Are you in neeed of Humanitarian aid?</h3>
-            <button onClick={currentLocation}>Current Location</button>
-             <hr/>
-             <form onSubmit={handleSubmit}>
-                 <input type="text" ref={latitudeRef} placeholder="Latitude" required/>
+            </div>
+            <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+            <h2>Are you in neeed of Humanitarian aid?</h2>
+            <Button size="small" variant="outlined" onClick={currentLocation}>Current Location</Button>
+             <Typography variant="span">or</Typography>
+             <form className="form" onSubmit={handleSubmit}>
+                 <input type="text" style={{margin:"5px", }} ref={latitudeRef} placeholder="Latitude" required/>
                  <input type="text" ref={longitudeRef} placeholder="Longitude" required/>
-                 <input type="submit" value="submit"/>
+                 <input type="submit" value="submit" style={{margin:"5px", borderRadius:"4px", color:"#1976d2", border:"1px solid rgba(25, 118, 210, 0.5)", padding:"3px", backgroundColor:"transparent"}}/>
              </form>
-             <span>This map is an ongoing project.<br/>View the source code here</span>
+             </div>
+             <Typography variant="span">This map is an ongoing project.<br/><Link href="https://github.com/H-Tambourou/Aid-Map.git">View the source code here</Link></Typography>
 
              
         </div>

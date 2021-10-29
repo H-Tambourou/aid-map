@@ -1,0 +1,50 @@
+@media (max-width: 610px ){
+    .infoCol{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .infowrapper{
+        justify-content: flex-start;
+    }
+    .infoWrapper h1{
+        font-size: 32px;
+        margin: 7px;
+    }
+    .infoWrapper p{
+        font-size: calc(.7em + 1vh);
+        margin: 7px;
+    }
+    .infoWrapper h2{
+        font-size: 24px;
+        margin: 7px;
+        text-align: center;
+    }
+    .mapCol{
+        float: none;
+        width: 85%;
+        margin: auto;
+        height: auto;
+    }
+}
+
+@media (min-width: 610px ) and (max-width:769){
+    .infowrapper{
+        justify-content: space-evenly;
+    }
+    .infoWrapper h1{
+        font-size: 32px;
+        margin: 7px;
+    }
+    .infoWrapper p{
+        font-size: calc(.5em + 1vh);
+        margin: 7px;
+    }
+    .infoWrapper h2{
+        font-size: 24px;
+        margin: 7px;
+        text-align: center;
+    }
+    
+    
+}
