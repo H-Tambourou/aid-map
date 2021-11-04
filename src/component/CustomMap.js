@@ -45,13 +45,15 @@ class CustomMap extends Component {
                     height:"100vh"
                 }}
                 initialCenter={{
-                    //lat: 30.1260561,
-                    //lng: -95.4606301
-                    lat: 29.7161725,
-                    lng: -95.3416357,
+                    lat: this.props.location[0].latitude,
+                    lng: this.props.location[0].longitude,
         
                 }}
-                zoom={10}
+                center={{
+                    lat: this.props.location[this.props.location.length -1].latitude,
+                    lng: this.props.location[this.props.location.length -1].longitude,
+                }}
+                zoom={5}
                 onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
                 
             >
@@ -87,5 +89,4 @@ class CustomMap extends Component {
 
 export default GoogleApiWrapper({
    apiKey: process.env.REACT_APP_API_KEY
-    //apiKey: ""
 })(CustomMap);

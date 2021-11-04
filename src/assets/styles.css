@@ -54,3 +54,6 @@ input:focus{
     width: 70%;
     height: 100vh;
 }
+.submitButton:hover{
+    filter: brightness(120%);
+}
