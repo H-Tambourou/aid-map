@@ -3,6 +3,8 @@
         float: none;
         width: 100%;
         height: auto;
+        border-right-style: none;
+        border-right-color: none;
     }
     .infowrapper{
         justify-content: flex-start;

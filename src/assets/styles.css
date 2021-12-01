@@ -18,6 +18,8 @@
     float: left;
     width: 30%;
     height: 100vh;
+    border-right-style: dotted;
+    border-right-color: #427fed;
 }
 .infoWrapper{
     display: flex;

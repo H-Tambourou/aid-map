@@ -11,12 +11,12 @@ function App() {
   const [location, setLocation] = useState([
     {
         "title": "ex 1",
-        "latitude": 1.93322,
-        "longitude": 45.433154
+        "latitude": 3.938240,
+        "longitude": 45.489511
       },
       {
         "title": "ex 2",
-        "latitude": 1.120534,
+        "latitude": 1.130530,
         "longitude": 42.310954
       },
       {
